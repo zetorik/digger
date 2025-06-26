@@ -4,7 +4,7 @@ John the digger - the most brave and talented digger in the Universe. His missio
 
 ## Requirements
 
-cpu (preferably)
+Cpu (preferably)
 
 ## Build dependencies
 
