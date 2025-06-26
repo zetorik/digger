@@ -5,6 +5,7 @@
 class Collision {
     public:
         Collision(Transform* transform, float radius);
+        Collision() {};
         Vec2 getPosition() const;
         float getRadius() const;
     private:

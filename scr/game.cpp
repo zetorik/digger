@@ -41,7 +41,7 @@ Game::Game():
     SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO);
     TTF_Init();
 
-    m_window = SDL_CreateWindow("Digger", WINDOW_SIZE.x, WINDOW_SIZE.y, 0);
+    m_window = SDL_CreateWindow("Digger", WINDOW_SIZE.x, WINDOW_SIZE.y, SDL_WINDOW_OPENGL);
     m_renderer = SDL_CreateRenderer(m_window, NULL);
     SDL_SetRenderVSync(m_renderer, 1);
 
@@ -66,6 +66,7 @@ Game::Game():
     m_rockDelay = BASE_ROCK_DELAY;
     m_oreDelay = m_oreDelayDistrib(gen); 
     m_rockTimer = 0;
+    m_oreTimer = 0;
     m_running = true; 
 
     mainLoop();

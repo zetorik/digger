@@ -25,11 +25,11 @@ Rock::Rock(SDL_Renderer* renderer, Vec2 startingPos, Vec2 direction, float veloc
     m_transform(startingPos),
     m_size(getRandomSize()),
     m_spriteRenderer(renderer, &m_transform, m_size, TextureManager::getInstance().getTexture(ROCK_TEXTURE_PATH)),
-    ICollidable(&m_transform, std::min<float>(m_size.x, m_size.y) * 0.45),
     m_velocity(velocity), 
     m_direction(direction) {
 
     tagCollidable = "Rock";
+    m_collision = Collision(&m_transform, std::min<float>(m_size.x, m_size.y) * 0.45);
 }
 
 Rock::~Rock() {

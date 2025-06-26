@@ -16,7 +16,7 @@ Explosion::Explosion(SDL_Renderer* renderer, const Vec2& pos):
     m_timePerSprite(DURATION / SPRITE_AMOUNT),
     m_spriteTimer(0),
     m_spriteIndex(0) {
-
+   
     m_spriteRenderer.setSourceSize(SOURCE_SIZE);
     m_spriteRenderer.setSourcePosition(SOURCE_SIZE * 3);
 }

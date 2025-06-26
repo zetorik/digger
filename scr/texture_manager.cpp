@@ -15,6 +15,7 @@ void TextureManager::setRenderer(SDL_Renderer* renderer) {
 
 SDL_Texture* TextureManager::getTexture(const std::string& path) {
     auto it = m_textures.find(path);
+    
     if (it != m_textures.end()) {
         return it->second;
     }

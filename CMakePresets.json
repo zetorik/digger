@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "configurePresets": [
+        {
+            "name": "default",
+            "displayName": "Default with vcpkg",
+            "generator": "Ninja",
+            "cacheVariables": {
+                "CMAKE_TOOLCHAIN_FILE": "C:/Users/zetor/OneDrive/Desktop/vcpkg/scripts/buildsystems/vcpkg.cmake"
+            }
+        }
+    ]
+}

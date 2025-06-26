@@ -10,6 +10,7 @@ class ICollidable {
         ICollidable(Transform* transform, float radius) : m_collision(transform, radius) {
 
         }
+        ICollidable() {};
         std::string tagCollidable = "Object";
     protected:
         Collision m_collision;

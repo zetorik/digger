@@ -15,9 +15,9 @@ class Rock : public IUpdatable, public ITrasformable, public ICollidable {
         void setPosition(const Vec2& pos);
         void update(float deltaTime) override;
     private:
-        SpriteRenderer m_spriteRenderer;
         Transform m_transform;
         Vec2 m_size;
         Vec2 m_direction;
         float m_velocity;
+        SpriteRenderer m_spriteRenderer;
 };

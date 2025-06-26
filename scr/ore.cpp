@@ -11,9 +11,9 @@ const std::string COBALT_TEXTURE_PATH = "assets/cobalt.png";
 const float fadeInTime = 2.5;
 
 Ore::Ore(SDL_Renderer* renderer, const Vec2& pos, OreType type):
-    m_transform(pos),
-    ICollidable(&m_transform, HITBOX_RADIUS) {
+    m_transform(pos) {
 
+    m_collision = Collision(&m_transform, HITBOX_RADIUS);
     tagCollidable = "Ore";
 
     std::string path;

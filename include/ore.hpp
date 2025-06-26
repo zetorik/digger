@@ -22,5 +22,5 @@ class Ore : public IUpdatable, public ITrasformable, public ICollidable {
     private:
         Transform m_transform;
         SpriteRenderer m_spriteRenderer;
-        int m_price;
+        int m_price = 0;
 };
